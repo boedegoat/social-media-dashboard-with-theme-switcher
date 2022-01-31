@@ -54,6 +54,38 @@
   @apply wrapper;
 }
 
+.overview__card {
+  @apply p-5 bg-light-card-bg rounded-md space-y-5;
+}
+
+.overview__card__top {
+  @apply flex justify-between items-center;
+}
+
+.overview__card__bottom {
+  @apply flex justify-between items-end;
+}
+
+.overview__card__label {
+  @apply font-bold text-light-blue-text text-sm;
+}
+
+.overview__card__number {
+  @apply text-3xl font-bold text-light-primary-text;
+}
+
+.overview__card__growStat {
+  @apply flex items-center text-xs font-bold;
+}
+
+.overview__card__growStatUp {
+  @apply overview__card__growStat text-lime-green;
+}
+
+.overview__card__growStatDown {
+  @apply overview__card__growStat text-bright-red;
+}
+
 .switch-input {
   @apply absolute left-1/2 -translate-x-1/2 w-full h-full appearance-none rounded-md;
 }
