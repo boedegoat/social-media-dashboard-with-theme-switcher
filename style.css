@@ -11,7 +11,7 @@
 }
 
 .header {
-  @apply wrapper bg-light-top-bg pt-10 pb-24 rounded-b-2xl;
+  @apply wrapper bg-light-top-bg dark:bg-dark-top-bg pt-10 pb-24 rounded-b-2xl;
 }
 
 .dashboards {
@@ -19,7 +19,7 @@
 }
 
 .dashboard__card {
-  @apply relative overflow-hidden flex flex-col items-center py-6 bg-light-card-bg rounded-md;
+  @apply relative overflow-hidden flex flex-col items-center py-6 bg-light-card-bg dark:bg-dark-card-bg rounded-md;
 }
 
 .dashboard__card__top {
@@ -27,15 +27,15 @@
 }
 
 .dashboard__card__username {
-  @apply text-sm font-bold text-light-blue-text;
+  @apply text-sm font-bold text-light-blue-text dark:text-dark-blue-text;
 }
 
 .dashboard__card__number {
-  @apply font-bold text-5xl mt-6;
+  @apply font-bold text-5xl mt-6 text-light-primary-text dark:text-dark-primary-text;
 }
 
 .dashboard__card__numberLabel {
-  @apply uppercase tracking-[0.3em] text-xs text-light-blue-text my-2;
+  @apply uppercase tracking-[0.3em] text-xs text-light-blue-text dark:text-dark-blue-text my-2;
 }
 
 .dashboard__card__growStat {
@@ -55,7 +55,7 @@
 }
 
 .overview__card {
-  @apply p-5 bg-light-card-bg rounded-md space-y-5;
+  @apply p-5 bg-light-card-bg dark:bg-dark-card-bg rounded-md space-y-5;
 }
 
 .overview__card__top {
@@ -67,11 +67,11 @@
 }
 
 .overview__card__label {
-  @apply font-bold text-light-blue-text text-sm;
+  @apply font-bold text-light-blue-text dark:text-dark-blue-text text-sm;
 }
 
 .overview__card__number {
-  @apply text-3xl font-bold text-light-primary-text;
+  @apply text-3xl font-bold text-light-primary-text dark:text-dark-primary-text;
 }
 
 .overview__card__growStat {
