@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+  @apply px-6;
+}
+
 .container {
-  @apply px-6 py-10 text-light-primary-text;
+  @apply text-light-primary-text;
+}
+
+.header {
+  @apply wrapper bg-light-top-bg pt-10 pb-24 rounded-b-2xl;
 }
 
 .dashboards {
-  @apply mt-10 space-y-6;
+  @apply wrapper space-y-6;
+}
+
+.overviews {
+  @apply wrapper;
 }
 
 .switch-input {
