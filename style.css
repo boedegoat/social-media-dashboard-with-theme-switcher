@@ -18,6 +18,38 @@
   @apply wrapper space-y-6;
 }
 
+.dashboard__card {
+  @apply relative overflow-hidden flex flex-col items-center py-6 bg-light-card-bg rounded-md;
+}
+
+.dashboard__card__top {
+  @apply absolute top-0 left-0 w-full h-1;
+}
+
+.dashboard__card__username {
+  @apply text-sm font-bold text-light-blue-text;
+}
+
+.dashboard__card__number {
+  @apply font-bold text-5xl mt-6;
+}
+
+.dashboard__card__numberLabel {
+  @apply uppercase tracking-[0.3em] text-xs text-light-blue-text my-2;
+}
+
+.dashboard__card__growStat {
+  @apply text-xs font-bold mt-3 flex items-center;
+}
+
+.dashboard__card__growStatUp {
+  @apply dashboard__card__growStat text-lime-green;
+}
+
+.dashboard__card__growStatDown {
+  @apply dashboard__card__growStat text-bright-red;
+}
+
 .overviews {
   @apply wrapper;
 }
