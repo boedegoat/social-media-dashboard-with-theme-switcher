@@ -10,36 +10,42 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/init.js" type="module"></script>
     <script src="/js/main.js" type="module" defer></script>
     <title>Social Media Dashboard</title>
   </head>
   <body class="bg-light-primary-bg dark:bg-dark-primary-bg">
-    <div class="container">
+    <main>
       <!-- header -->
       <header class="header">
-        <h1 class="font-bold text-2xl text-light-primary-text dark:text-dark-primary-text">
-          Social Media Dashboard
-        </h1>
-        <p class="text-sm text-light-blue-text dark:text-dark-blue-text mt-1 font-bold">
-          Total Followers: 23,004
-        </p>
-        <hr class="my-5 border-light-blue-text/50" />
+        <div class="wrapper flex flex-wrap">
+          <div>
+            <h1 class="font-bold text-2xl text-light-primary-text dark:text-dark-primary-text">
+              Social Media Dashboard
+            </h1>
 
-        <label
-          class="relative overview__card__top group font-bold text-light-blue-text dark:text-dark-blue-text text-sm"
-        >
-          Dark Mode
-          <input type="checkbox" checked class="switch-input peer" id="theme-switcher" />
-          <span class="switch-component"></span>
-        </label>
+            <p class="text-sm text-light-blue-text dark:text-dark-blue-text mt-1 font-bold">
+              Total Followers: 23,004
+            </p>
+          </div>
+
+          <hr class="w-full my-5 border-light-blue-text/50 md:hidden" />
+
+          <label
+            class="relative w-full flex justify-between items-center group font-bold text-light-blue-text dark:text-dark-blue-text text-sm md:w-auto md:ml-auto"
+          >
+            Dark Mode
+            <input type="checkbox" checked class="switch-input peer" id="theme-switcher" />
+            <span class="switch-component"></span>
+          </label>
+        </div>
       </header>
       <!-- end header -->
 
       <div class="-translate-y-14 space-y-10">
         <!-- dashboards -->
-        <div class="dashboards">
+        <section class="dashboards">
           <!-- facebook -->
           <div class="dashboard__card">
             <div class="dashboard__card__top bg-facebook"></div>
@@ -94,15 +100,15 @@
               <img src="/images/icon-down.svg" alt="down" class="mr-2" /> 144 todays
             </p>
           </div>
-        </div>
+        </section>
         <!-- end dashboards -->
 
         <!-- overviews -->
-        <div class="overviews">
+        <section class="overviews">
           <h2 class="text-light-blue-text dark:text-dark-blue-text text-xl font-bold">
             Overview - Today
           </h2>
-          <div class="mt-6 space-y-5">
+          <div class="mt-6 space-y-5 md:grid md:grid-cols-2 xl:grid-cols-4 md:space-y-0 md:gap-5">
             <div class="overview__card">
               <div class="overview__card__top">
                 <p class="overview__card__label">Page Views</p>
@@ -200,9 +206,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- end overviews -->
       </div>
-    </div>
+    </main>
   </body>
 </html>
