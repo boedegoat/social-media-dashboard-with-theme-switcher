@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  @apply px-6 mx-auto max-w-md md:max-w-4xl xl:max-w-6xl;
+}
+
+.header {
+  @apply relative bg-light-top-bg dark:bg-dark-top-bg pt-10 pb-24 rounded-b-2xl;
+}
+
+.dashboards {
+  @apply wrapper space-y-6 md:grid md:gap-5 md:space-y-0 md:grid-cols-2 xl:grid-cols-4;
+}
+
+.dashboard__card {
+  @apply relative overflow-hidden flex flex-col md:flex-grow items-center py-6 bg-light-card-bg dark:bg-dark-card-bg rounded-md;
+}
+
+.dashboard__card__top {
+  @apply absolute top-0 left-0 w-full h-1;
+}
+
+.dashboard__card__username {
+  @apply text-sm font-bold text-light-blue-text dark:text-dark-blue-text;
+}
+
+.dashboard__card__number {
+  @apply font-bold text-5xl mt-6 text-light-primary-text dark:text-dark-primary-text;
+}
+
+.dashboard__card__numberLabel {
+  @apply uppercase tracking-[0.3em] text-xs text-light-blue-text dark:text-dark-blue-text my-2;
+}
+
+.dashboard__card__growStat {
+  @apply text-xs font-bold mt-3 flex items-center;
+}
+
+.dashboard__card__growStatUp {
+  @apply dashboard__card__growStat text-lime-green;
+}
+
+.dashboard__card__growStatDown {
+  @apply dashboard__card__growStat text-bright-red;
+}
+
+.overviews {
+  @apply wrapper;
+}
+
+.overview__card {
+  @apply p-5 bg-light-card-bg dark:bg-dark-card-bg rounded-md space-y-5;
+}
+
+.overview__card__top {
+  @apply flex justify-between items-center;
+}
+
+.overview__card__bottom {
+  @apply flex justify-between items-end;
+}
+
+.overview__card__label {
+  @apply font-bold text-light-blue-text dark:text-dark-blue-text text-sm;
+}
+
+.overview__card__number {
+  @apply text-3xl font-bold text-light-primary-text dark:text-dark-primary-text;
+}
+
+.overview__card__growStat {
+  @apply flex items-center text-xs font-bold;
+}
+
+.overview__card__growStatUp {
+  @apply overview__card__growStat text-lime-green;
+}
+
+.overview__card__growStatDown {
+  @apply overview__card__growStat text-bright-red;
+}
+
+.switch-input {
+  @apply absolute left-1/2 -translate-x-1/2 w-full h-full appearance-none rounded-md;
+}
+
+.switch-component {
+  @apply w-14 h-7 flex items-center flex-shrink-0 ml-4 p-1 
+  bg-gray-300 rounded-full duration-300 ease-in-out 
+  bg-gradient-to-r from-toggle-dark-blue to-toggle-dark-green 
+  peer-checked:from-toggle-light peer-checked:to-toggle-light 
+  after:w-5 after:h-5 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-7;
+}
